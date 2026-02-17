@@ -1,11 +1,236 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Pigeon-CPU</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chi Wang | Personal Website</title>
+  <meta name="description" content="Chi Wang — Electrical Engineering, UW–Madison. Antennas, Remote Sensing, UAV-based Ground Penetrating Radar (GPR)." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
-  <h1>Pigeon-CPU</h1>
-  <p>Welcome to my personal website.</p>
+  <header class="site-header">
+    <div class="container">
+      <div class="hero">
+        <div>
+          <h1>Chi Wang</h1>
+          <p class="subtitle">
+            Electrical Engineering @ UW–Madison • Antennas • Remote Sensing • UAV-based GPR
+          </p>
+          <div class="links">
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn btn-ghost" href="#projects">Projects</a>
+            <!-- Optional: upload your CV as "Chi_Wang_CV.pdf" in repo root -->
+            <a class="btn btn-ghost" href="Chi_Wang_CV.pdf">Download CV (PDF)</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Quick Info</h2>
+          <ul class="clean">
+            <li><b>Location:</b> Madison, WI</li>
+            <li><b>Research:</b> Antennas, soil sensing, GPR sim2real</li>
+            <li><b>Tools:</b> CST, gprMax, ADS, Synopsys, Onshape</li>
+            <li><b>Programming:</b> MATLAB, Python, Verilog, Java</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I’m a researcher at the University of Wisconsin–Madison working on antennas and remote sensing,
+          with a focus on UAV-based ground penetrating radar (GPR) and soil volumetric water content sensing.
+          I build end-to-end systems spanning simulation, hardware prototyping, and field experiments.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Education</h3>
+            <ul class="clean">
+              <li>
+                <b>University of Wisconsin–Madison</b><br/>
+                B.S. Electrical Engineering (Fall 2022 – May 2025) • GPA: 3.90/4.00<br/>
+                Ph.D. Electrical Engineering (May 2025 – present)
+              </li>
+              <li class="spacer"></li>
+              <li>
+                <b>Michigan State University</b><br/>
+                Mechanical Engineering Preference (Fall 2020 – Spring 2022) • GPA: 4.00/4.00
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Research Interests</h3>
+            <ul class="clean">
+              <li>Antennas & radiation measurement automation</li>
+              <li>Remote sensing of soil properties (turf / field settings)</li>
+              <li>GPR simulation → real transfer (sim2real)</li>
+              <li>UAV platforms (RTK/NTRIP), autonomous navigation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section alt">
+      <div class="container">
+        <h2>Research Experience</h2>
+
+        <div class="card">
+          <h3>University of Wisconsin–Madison — Research Assistant <span class="muted"> (May 2025 – present)</span></h3>
+          <ul>
+            <li><b>Automation:</b> Programmed automated scanning of vector network analyzers using a robotic arm to collect antenna frequency-domain data over 3D radiation patterns.</li>
+            <li><b>Soil Radar Prototype Design:</b> Designed and integrated a sensor platform for remote sensing of soil volumetric water content.</li>
+            <li><b>GPR Sim2Real Domain Transfer:</b> Developing algorithms to transfer simulated antenna results to real antenna systems under far-field conditions.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>University of Wisconsin–Madison — Undergraduate Research Assistant <span class="muted"> (Dec 2023 – May 2025)</span></h3>
+          <ul>
+            <li><b>Automation:</b> Built automation for VNA and frequency synthesizer module data acquisition and processing.</li>
+            <li><b>Antenna Design:</b> Designed/fabricated a wideband dual-polarized cross-shaped Vivaldi antenna (0.2–4.0 GHz).</li>
+            <li><b>3D Printing:</b> Designed and printed fixtures for antenna-based experiments.</li>
+            <li><b>GPR Simulation:</b> Simulated GPR performance with dipole antennas in turf soil conditions.</li>
+            <li><b>Field Experiment:</b> Conducted field tests with a custom-built compact GPR system; processed data to validate reflection-property correlation with turf water content.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Field Work Highlight</h3>
+          <ul>
+            <li>Collected field data at the OJ Noer research station using a self-custom-built GPR system; verified feasibility of soil volumetric water content sensing for turf grass fields.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>U-Net for GPR B-scan Clutter Removal <span class="muted">(Summer 2025)</span></h3>
+            <p>
+              Prepared simulation datasets and trained a U-Net based ML model for GPR B-scan image clutter removal.
+            </p>
+            <p class="muted small">Keywords: gprMax, dataset generation, deep learning, clutter suppression</p>
+          </div>
+
+          <div class="card">
+            <h3>RTK Drone Platform (RTK + NTRIP) <span class="muted">(Spring 2025)</span></h3>
+            <p>
+              Assembled and customized a drone equipped with RTK and NTRIP connectivity to achieve centimeter-level positioning,
+              designed to support a ~3 kg payload.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Autonomous Boat <span class="muted">(Spring 2025)</span></h3>
+            <p>
+              Designed and built a low-cost autonomous boat with automatic navigation capability.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Digital Design (Verilog) <span class="muted">(Fall 2024)</span></h3>
+            <ul>
+              <li>Implemented UART and PID control using Verilog.</li>
+              <li>Performed gate-level synthesis with Synopsys.</li>
+              <li>Developed a standard-cell IC for a “Knight’s Tour” team project.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Yagi-Uda Antenna @ 1 GHz <span class="muted">(Spring 2024)</span></h3>
+            <p>
+              Designed a high-gain Yagi-Uda antenna at 1 GHz using CST Studio Suite.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Programming</h3>
+            <p>Java, MATLAB, Python, Verilog</p>
+            <h3>Software</h3>
+            <p>LTspice, CST Studio Suite, gprMax, Synopsys, ADS, Onshape</p>
+          </div>
+          <div class="card">
+            <h3>Hardware / Lab</h3>
+            <p>Vector Network Analyzer, soldering, oscilloscope, robotic arm, PC DIY, drone DIY</p>
+            <h3>Certification</h3>
+            <p>FAA Drone License</p>
+            <h3>Hobby</h3>
+            <p>Badminton</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+        <h2>Honors & Awards</h2>
+        <div class="card">
+          <ul class="clean">
+            <li>2025 — ECE Distinguished Graduate Fellowship</li>
+            <li>2025 — Capstone Design Excellence Award</li>
+            <li>2024 — IEEE Antennas & Propagation Society (AP-S) Undergraduate Summer Research Scholarship</li>
+            <li>2022–2024 — Dean’s Honor List (UW–Madison)</li>
+            <li>2021–2022 — Dean’s List (Michigan State University)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>
+            Email: <a href="mailto:cwang788@wisc.edu">cwang788@wisc.edu</a><br/>
+            <!-- Optional: phone on public site is your call -->
+            Phone: <span class="muted">(608) 298-8067</span><br/>
+            Location: Madison, WI
+          </p>
+
+          <p class="muted small">
+            Tip: If you prefer not to show your phone publicly, delete that line and add links (GitHub / LinkedIn / Google Scholar) instead.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="muted small">© <span id="year"></span> Chi Wang • Built with GitHub Pages</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
