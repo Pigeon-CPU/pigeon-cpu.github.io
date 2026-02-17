@@ -1,0 +1,96 @@
+:root{
+  --bg:#0b0f17;
+  --card:#121a27;
+  --text:#e8eefc;
+  --muted:#a8b3cf;
+  --line:rgba(255,255,255,0.12);
+  --accent:#7aa2ff;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #070a10 60%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.container{max-width:980px;margin:0 auto;padding:24px}
+.section{padding:34px 0}
+.section.alt{background: rgba(255,255,255,0.03); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+
+.site-header{
+  border-bottom:1px solid var(--line);
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(122,162,255,0.22), transparent 60%);
+}
+
+.hero{
+  display:grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap:18px;
+  align-items:stretch;
+  padding-top:10px;
+}
+
+h1{margin:0 0 6px 0; font-size: 2.2rem; letter-spacing:0.2px}
+h2{margin:0 0 14px 0; font-size: 1.5rem}
+h3{margin:0 0 8px 0; font-size: 1.05rem}
+.subtitle{margin:0 0 14px 0; color: var(--muted)}
+
+.nav{
+  display:flex; flex-wrap:wrap; gap:14px;
+  margin-top:18px; padding-top:14px;
+  border-top:1px solid var(--line);
+}
+.nav a{color: var(--muted)}
+.nav a:hover{color: var(--text); text-decoration:none}
+
+.card{
+  background: rgba(18,26,39,0.9);
+  border:1px solid var(--line);
+  border-radius: 14px;
+  padding:16px 16px;
+}
+
+.grid-2{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:16px;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 12px;
+  border-radius: 12px;
+  background: rgba(122,162,255,0.18);
+  border:1px solid rgba(122,162,255,0.35);
+  color: var(--text);
+  margin-right:8px;
+}
+.btn:hover{text-decoration:none; filter:brightness(1.08)}
+.btn-ghost{
+  background: transparent;
+  border:1px solid var(--line);
+  color: var(--muted);
+}
+
+.clean{list-style:none; padding-left:0; margin:0}
+.clean li{margin:6px 0}
+.spacer{height:8px}
+
+.muted{color: var(--muted)}
+.small{font-size: 0.92rem}
+
+.footer{
+  border-top:1px solid var(--line);
+  padding:18px 0 26px 0;
+}
+
+@media (max-width: 860px){
+  .hero{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+}
